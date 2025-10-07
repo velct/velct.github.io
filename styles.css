@@ -1,0 +1,293 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Visually hidden but accessible to screen readers and SEO */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+}
+
+.nav-brand {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+.nav-brand:hover {
+    opacity: 0.6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+/* Sections */
+.section {
+    min-height: 100vh;
+    padding: 140px 60px 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.section-header {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: -3px;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+.section-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+}
+
+/* Products Grid */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.product-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    width: 400px;
+    max-width: 100%;
+}
+
+.product-item:hover {
+    transform: translateY(-8px);
+}
+
+.product-item:hover .product-image img {
+    opacity: 0.8;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: #000000;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.product-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-placeholder span {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 16px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    align-items: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-block;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: -1px;
+    transition: opacity 0.3s ease;
+}
+
+.contact-link:hover {
+    opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 80px;
+    }
+
+    .products-grid {
+        gap: 30px;
+    }
+
+    .product-item {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 30px 30px;
+    }
+
+    .nav-brand {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 120px 30px 60px;
+    }
+
+    .section-title {
+        font-size: 60px;
+        letter-spacing: -2px;
+    }
+
+    .section-description {
+        font-size: 16px;
+    }
+
+    .products-grid {
+        gap: 30px;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+    .contact-link {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 20px 20px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 140px 20px 40px;
+    }
+
+    .section-title {
+        font-size: 48px;
+    }
+
+    .contact-link {
+        font-size: 20px;
+        word-break: break-all;
+    }
+}
+
