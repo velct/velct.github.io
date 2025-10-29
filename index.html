@@ -100,27 +100,56 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="/" class="nav-brand">velct</a>
-        <div class="nav-links">
-            <a href="#products">products</a>
-            <a href="#info">about</a>
-            <a href="#contact">contact</a>
+        <div class="nav-brand">velct</div>
+        <div class="nav-center">
+            <p class="nav-tagline">AI Products That Make Sense.</p>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="btn-primary">Get in Touch</a>
         </div>
     </nav>
 
     <main>
         <!-- Main heading for SEO -->
         <h1 class="visually-hidden">velct - AI Products That Make Sense</h1>
-        
-        <section id="products" class="section products-section">
-            <div class="section-header">
-                <h2 class="section-title">products</h2>
-                <p class="section-description">
-                    We build AI products that actually make sense. Our mission is to create simple, powerful tools that solve real problems without unnecessary complexity. Each product is designed with care, tested thoroughly, and built to last.<br><br>
-                    From voice assistants to productivity tools, we focus on what matters: making your life easier and more efficient.
-                </p>
-            </div>
 
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="assets/logo.jpeg" alt="velct" loading="eager">
+            </div>
+            <h2 class="hero-logo">velct</h2>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-grid-section">
+            <div class="section-label">(01) ABOUT</div>
+            <div class="content-grid">
+                <div class="grid-text">
+                    <p>We're a small team passionate about artificial intelligence and great user experience. Founded by developers and designers who care deeply about quality, we believe AI should enhance human capabilities, not replace them.</p>
+                    <p>Every product we create goes through rigorous testing and iteration. We listen to our users, learn from their feedback, and continuously improve. Our approach is simple: build tools we'd want to use ourselves.</p>
+                </div>
+                <div class="grid-text">
+                    <p>Based remotely, we work with talented people around the world who share our vision of making AI accessible and useful for everyone.</p>
+                    <p>Whether voice assistants, productivity tools, or time experiments – we design experiences that are technically precise, visually reduced, and so clear they feel natural.</p>
+                </div>
+                <!-- <div class="grid-footer"> -->
+                    <!-- <a href="#products" class="btn-secondary">Products</a> -->
+                    <!-- <p class="grid-copyright">©2025</p> -->
+                <!-- </div> -->
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section products-section">
+            <div class="section-label">(02) PRODUCTS</div>
+            <h2 class="section-title">We build AI products that actually make sense</h2>
+            <p class="section-description">Our mission is to create simple, powerful tools that solve real problems without unnecessary complexity. Each product is designed with care, tested thoroughly, and built to last. From voice assistants to productivity tools, we focus on what matters: making your life easier and more efficient.</p>
             <div class="products-grid">
                 <a href="https://0sec.app" target="_blank" class="product-item">
                     <div class="product-image">
@@ -143,41 +172,85 @@
             </div>
         </section>
 
-        <section id="info" class="section info-section">
-            <div class="section-header">
-                <h2 class="section-title">about</h2>
-                <p class="section-description">
-                    We're a small team passionate about artificial intelligence and great user experience. Founded by developers and designers who care deeply about quality, we believe AI should enhance human capabilities, not replace them.<br><br>
-                    Every product we create goes through rigorous testing and iteration. We listen to our users, learn from their feedback, and continuously improve. Our approach is simple: build tools we'd want to use ourselves.<br><br>
-                    Based remotely, we work with talented people around the world who share our vision of making AI accessible and useful for everyone.
-                </p>
-            </div>
-        </section>
-
+        <!-- Building Section -->
         <section id="building" class="section building-section">
-            <div class="section-header">
-                <h2 class="section-title">what we're building</h2>
-                <p class="section-description">
-                    Currently, we're focused on productivity and communication tools powered by AI. Our roadmap includes voice-first interfaces, smart automation, and intelligent assistants that understand context.<br><br>
-                    0sec is just the beginning. We're exploring calendar intelligence, email management, task automation, and meeting assistance. Each new product starts with a problem we've personally experienced.<br><br>
-                    Want to know what's next? Follow us on <a href="https://x.com/velcthq" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">X/Twitter</a> for updates and early access to new products.
-                </p>
+            <div class="section-label">(03) WHAT WE'RE BUILDING</div>
+            <div class="content-grid">
+                <div class="grid-text">
+                    <p>Currently, we're focused on productivity and communication tools powered by AI. Our roadmap includes voice-first interfaces, smart automation, and intelligent assistants that understand context.</p>
+                    <p>0sec is just the beginning. We're exploring calendar intelligence, email management, task automation, and meeting assistance. Each new product starts with a problem we've personally experienced.</p>
+                </div>
+                <div class="grid-text">
+                    <p>Want to know what's next? Follow us on X/Twitter for updates and early access to new products.</p>
+                </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="section contact-section">
-            <div class="section-header">
-                <h2 class="section-title">contact</h2>
-                <p class="section-description">
-                    We'd love to hear from you. Whether you have questions, feedback, ideas, or just want to say hello — reach out on X/Twitter. We read every message and respond to all genuine inquiries.
-                </p>
-                <div class="contact-links">
+            <div class="section-label">(04) CONTACT</div>
+            <h2 class="section-title">We'd love to hear from you</h2>
+            <p class="section-description">Whether you have questions, feedback, ideas, or just want to say hello — reach out on X/Twitter. We read every message and respond to all genuine inquiries.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3 class="contact-name">velct team</h3>
+                    <p class="contact-role">General Inquiries</p>
                     <a href="https://x.com/velcthq" target="_blank" rel="noopener noreferrer" class="contact-link">@velcthq</a>
+                    <p class="contact-location">Remote, Worldwide</p>
+                </div>
+                <div class="contact-card">
+                    <h3 class="contact-name">Roman Potemin</h3>
+                    <p class="contact-role">Founder</p>
                     <a href="https://x.com/poteminr" target="_blank" rel="noopener noreferrer" class="contact-link">@poteminr</a>
+                    <p class="contact-location">San Francisco, CA</p>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Menu</h4>
+                    <nav class="footer-nav">
+                        <a href="#products">Products</a>
+                        <a href="#info">About</a>
+                        <a href="#building">Building</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Products</h4>
+                    <nav class="footer-nav">
+                        <a href="https://0sec.app" target="_blank" rel="noopener noreferrer">0sec.app ↗</a>
+                        <a href="https://00ce.com" target="_blank" rel="noopener noreferrer">00ce.com ↗</a>
+                    </nav>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <nav class="footer-nav">
+                        <a href="https://x.com/velcthq" target="_blank" rel="noopener noreferrer">X/Twitter ↗</a>
+                        <a href="mailto:hello@velct.com">Email ↗</a>
+                    </nav>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Socials</h4>
+                    <nav class="footer-nav">
+                        <a href="https://x.com/velcthq" target="_blank" rel="noopener noreferrer">@velcthq</a>
+                        <a href="https://x.com/poteminr" target="_blank" rel="noopener noreferrer">@poteminr</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer-brand">
+                <h2 class="footer-logo">velct</h2>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
